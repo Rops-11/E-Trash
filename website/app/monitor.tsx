@@ -44,7 +44,7 @@ export default function Monitor() {
   }, []);
   useEffect(() => {
     load();
-    const interval = setInterval(load, 30000);
+    const interval = setInterval(load, 5000);
     return () => clearInterval(interval);
   }, [load]);
   const bin = data?.connected && data.distance_valid,
